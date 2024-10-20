@@ -1,0 +1,14 @@
+@import '/src/styles/variables';
+
+.link {
+	box-sizing: content-box;
+	color: $accent-color;
+
+	&.active {
+		color: $main-color;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
