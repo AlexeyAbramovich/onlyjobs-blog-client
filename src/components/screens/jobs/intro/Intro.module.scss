@@ -1,0 +1,45 @@
+@import '/src/styles/variables';
+
+.intro {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 370px;
+
+	> h2 {
+		z-index: 10;
+		font-size: 48px;
+		line-height: 117%;
+		margin-bottom: 30px;
+	}
+
+	> h3 {
+		z-index: 10;
+		font-size: 18px;
+		line-height: 156%;
+		color: $sub-color;
+		margin-bottom: 32px;
+	}
+
+	.wrapper {
+		z-index: 10;
+		display: flex;
+		align-items: center;
+		column-gap: 16px;
+		margin-bottom: 16px;
+	}
+
+	&::before {
+		z-index: 1;
+		content: '';
+		display: block;
+		position: absolute;
+		left: -135px;
+		width: 1440px;
+		height: 370px;
+		background-image: url('/bg/intro-bg-tiles.svg');
+		background-size: cover;
+		background-position: center;
+	}
+}

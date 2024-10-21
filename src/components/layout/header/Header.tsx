@@ -9,7 +9,7 @@ export default function Header() {
 			<Image
 				priority
 				src='/logo.svg'
-				alt='onlyjobs.it site logo'
+				alt='Onlyjobs.it site logo'
 				width={172}
 				height={24}
 			/>

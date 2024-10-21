@@ -1,0 +1,45 @@
+@import '/src/styles/variables';
+
+.user_friendly_platform {
+	padding-top: 64px;
+	height: 100%;
+
+	> p {
+		max-width: 670px;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		color: $element-color;
+		margin-left: 8px;
+		margin-bottom: 16px;
+	}
+
+	.wrapper {
+		max-width: 670px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 8px;
+		margin-bottom: 22px;
+
+		.ai_chat {
+			> h2 {
+				font-size: 20px;
+				line-height: 120%;
+			}
+
+			> h3 {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 157%;
+				color: $accent-color;
+			}
+		}
+	}
+
+	> img {
+		border-top: 8px solid $border-color;
+		border-left: 8px solid $border-color;
+		border-top-left-radius: 16px;
+	}
+}

@@ -1,0 +1,19 @@
+@import '/src/styles/variables';
+
+.field {
+	border: 1px solid $border-accent-color;
+	border-radius: 8px;
+	padding: 8px 12px;
+	width: 258px;
+	height: 44px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	background: #fff;
+
+	&::placeholder {
+		color: $main-color;
+	}
+
+	&.footer {
+		width: 242px;
+	}
+}
