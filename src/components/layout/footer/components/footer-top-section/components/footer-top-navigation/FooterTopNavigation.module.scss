@@ -1,0 +1,10 @@
+.footer_top_navigation {
+	display: flex;
+	flex-direction: column;
+	row-gap: 32px;
+
+	> nav {
+		display: flex;
+		column-gap: 16px;
+	}
+}
