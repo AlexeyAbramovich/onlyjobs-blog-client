@@ -1,0 +1,99 @@
+@import '/src/styles/variables';
+
+.post {
+	display: flex;
+	flex-direction: column;
+
+	> img {
+		width: 100%;
+		border-radius: 12px;
+		margin-bottom: 24px;
+	}
+
+	.author_wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 12px;
+		.author {
+			display: flex;
+			column-gap: 4px;
+			align-items: center;
+
+			> img {
+				width: 24px;
+				height: 24px;
+				border: 1px solid $border-accent-color;
+				border-radius: 100%;
+			}
+
+			> span {
+				font-weight: 600;
+				font-size: 12px;
+				line-height: 100%;
+				letter-spacing: 0.01em;
+				text-transform: uppercase;
+				color: $element-color;
+			}
+		}
+		> span {
+			font-size: 12px;
+			line-height: 100%;
+			color: $accent-color;
+			border: 1px solid $border-accent-color;
+			border-radius: 24px;
+			padding: 4px 8px;
+		}
+	}
+
+	> h2 {
+		position: relative;
+		font-size: 24px;
+		line-height: 117%;
+		color: $main-color;
+		margin-bottom: 4px;
+	}
+
+	> p {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 157%;
+		color: $sub-color;
+		margin-bottom: 12px;
+	}
+
+	.published {
+		display: flex;
+		column-gap: 18px;
+
+		> span {
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 100%;
+			letter-spacing: 0.01em;
+			text-transform: uppercase;
+			color: $element-color;
+		}
+	}
+
+	&:hover {
+		color: $element-color;
+
+		> h2 {
+			color: $element-color;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				display: block;
+				width: 13px;
+				height: 13px;
+				background-image: url('/icons/arrow-top-right.svg');
+				background-position: center;
+				background-size: cover;
+			}
+		}
+	}
+}
