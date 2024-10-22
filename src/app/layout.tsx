@@ -1,3 +1,4 @@
+import Footer from '@/components/layout/footer/Footer'
 import Header from '@/components/layout/header/Header'
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
@@ -48,6 +49,7 @@ export default function RootLayout({
 			<body className={exoFont.className}>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	)

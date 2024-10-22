@@ -22,9 +22,7 @@ export default function Header() {
 					<Button isMain={false} padding='pd-12-16'>
 						Vacancy Feed
 					</Button>
-					<Button isMain={true} padding='pd-12-21'>
-						Sign Up
-					</Button>
+					<Button padding='pd-12-21'>Sign Up</Button>
 				</div>
 			</div>
 		</header>
